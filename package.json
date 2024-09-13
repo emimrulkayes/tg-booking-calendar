@@ -1,11 +1,16 @@
 {
   "name": "tg-booking-calendar",
   "version": "1.0.1",
-  "description": "The tg-booking-calendar is a versatile and user-friendly JavaScript library designed to simplify the process of creating and managing booking systems in web applications.",
+  "description": "The booking calendar is a versatile and user-friendly JavaScript library designed to simplify the process of creating and managing booking systems in web applications.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "MD IMRUL KAYES <emimrulkayes@gmail.com> (https://github.com/emimrulkayes)",
-  "license": "ISC"
+  "license": "ISC",
+  "keywords": ["calendar", "booking", "booking calendar", "javascript", "npm package"],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/emimrulkayes/tg-booking-calendar"
+  }
 }
