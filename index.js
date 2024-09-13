@@ -114,5 +114,7 @@ class TgCalendar {
   }
 }
 
-module.exports = TgCalendar;
+document.addEventListener("DOMContentLoaded", () => {
+  const calendar = new TgCalendar();
+});
 
