@@ -1,6 +1,6 @@
 {
   "name": "tg-booking-calendar",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "The booking calendar is a versatile and user-friendly JavaScript library designed to simplify the process of creating and managing booking systems in web applications.",
   "main": "index.js",
   "scripts": {
@@ -8,7 +8,8 @@
   },
   "author": "MD IMRUL KAYES <emimrulkayes@gmail.com> (https://github.com/emimrulkayes)",
   "license": "ISC",
-  "keywords": ["calendar", "booking", "booking calendar", "javascript", "npm package"],
+  "keywords": [
+  "gantt", "schedule", "scheduler", "booking", "calendar", "timeline", "booking calendar", "calendar booking", "javascript", "npm package", "tg calendar", "tg booking calendar", "date-picker", "booking-system", "reservation-calendar", "reservation", "hotel booking", "JavaScript calendar", "booking widget", "booking tool", "booking management", "date selection", "time management", "booking tool", "online calendar", "frontend calendar", "scheduling"],
   "repository": {
     "type": "git",
     "url": "https://github.com/emimrulkayes/tg-booking-calendar"
