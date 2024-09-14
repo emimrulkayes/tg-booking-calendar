@@ -1,10 +1,16 @@
+// Import the CSS file.
+import './css/style.css';
+
 class TgCalendar {
   constructor() {
     if (typeof document === "undefined") {
       throw new Error("TgCalendar is intended for use in a browser environment.");
     }
-    this.monthNames = [ /* months */ ];
-    this.dayNames = [ /* days */ ];
+    this.monthNames = [
+      "January", "February", "March", "April", "May", "June",
+      "July", "August", "September", "October", "November", "December"
+    ];
+    this.dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     this.today = new Date();
     this.currentDay = this.today.getDate();
     this.currentMonth = this.today.getMonth();

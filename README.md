@@ -3,7 +3,7 @@
 `TG Booking Calendar` is a simple and interactive JavaScript library for creating booking calendars.
 
 ## Include JS:
-Install with npm or added yarn.
+You can install `tg-booking-calendar` using npm or yarn:
 ```bash
 npm install tg-booking-calendar
 ```
@@ -11,7 +11,11 @@ npm install tg-booking-calendar
 yarn add tg-booking-calendar
 ```
 
-### Then use with either commonjs or ESM imports:
+## Usage:
+### Import the Calendar
+You can use either CommonJS or ES modules to import and use the calendar.
+
+CommonJS (Node.js):
 ```bash
 const TgCalendar = require('tg-booking-calendar');
 
@@ -19,19 +23,28 @@ const TgCalendar = require('tg-booking-calendar');
 const calendar = new TgCalendar();
 ```
 
+ES Modules (ESM):
+```bash
+import TgCalendar from 'tg-booking-calendar';
 
-#### For legacy environments, you can load `tg-booking-calendar` UMD bundle from an npm-based CDN such as jsDelivr and unpkg:
+// Initialize the calendar
+const calendar = new TgCalendar();
+```
+
+### For Browser Environments:
+For legacy environments or when you want to use the package via a CDN, you can load `tg-booking-calendar` UMD bundle from npm-based CDN such as jsDelivr and unpkg:
+
+Use jsDelivr:
 ```bash
 <script src="https://cdn.jsdelivr.net/npm/tg-booking-calendar"></script>
 ```
+Or, Use unpkg:
 ```bash
 <script src="https://unpkg.com/tg-booking-calendar"></script>
 ```
-
-## Usage:
-
+## Basic HTML Example:
+Include the following HTML structure in your page to create the calendar UI.
 ```bash
-<body>
     <div class="tg-calendar-container">
         <div class="controls">
             <button class="prev">Previous</button>
@@ -40,17 +53,47 @@ const calendar = new TgCalendar();
         </div>
         <div class="calendar-grid"></div>
     </div>
-</body>
 ```
-Initialize the script at the bottom of the page before the closing body tag.
+
+At the bottom of your HTML file, before the closing </body> tag, initialize the calendar:
 ```bash
-     <!-- Include the npm package from jsDelivr or unpkg -->
-     <script src="https://cdn.jsdelivr.net/npm/tg-booking-calendar"></script>
-     <!-- or -->
-     <script src="https://unpkg.com/tg-booking-calendar"></script>
-     
-     <script>
-       // Initialize the calendar
-       const calendar = new TgCalendar();
-     </script>
+    <!-- Include the tg-booking-calendar package from a CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/tg-booking-calendar"></script>
+
+    <!-- or -->
+    <script src="https://unpkg.com/tg-booking-calendar"></script>
+
+    <script>
+        // Initialize the calendar
+        const calendar = new TgCalendar();
+    </script>
+```
+
+## Styles:
+For npm/yarn users:
+```bash
+    import 'tg-booking-calendar/css/style.css';
+```
+
+For CDN users, they should manually include the CSS file from the CDN or your own hosting:
+```bash
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tg-booking-calendar/css/style.css">
+```
+
+You can customize the following styles to change the appearance of the calendar:
+```bash
+    .calendar-day {
+        padding: 10px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .current-day {
+        background-color: #ffcc00;
+    }
+
+    .selected-day {
+        background-color: #4CAF50;
+        color: white;
+    }
 ```
