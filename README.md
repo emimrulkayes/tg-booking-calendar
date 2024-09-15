@@ -99,4 +99,4 @@ You can customize the following styles to change the appearance of the calendar:
 ```
 
 ## License
-[ISC License](https://opensource.org/license/isc-license-txt)
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
