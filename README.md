@@ -2,7 +2,7 @@
 
 `TG Booking Calendar` is a simple and interactive JavaScript library for creating booking calendars.
 
-## Include JS:
+## Installation:
 You can install `tg-booking-calendar` using npm or yarn:
 ```bash
 npm install tg-booking-calendar
@@ -97,3 +97,6 @@ You can customize the following styles to change the appearance of the calendar:
         color: white;
     }
 ```
+
+## License
+[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
