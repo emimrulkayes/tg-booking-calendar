@@ -36,12 +36,14 @@ For legacy environments or when you want to use the package via a CDN, you can l
 
 Use jsDelivr:
 ```bash
-<script src="https://cdn.jsdelivr.net/npm/tg-booking-calendar"></script>
+  <script src="https://cdn.jsdelivr.net/npm/tg-booking-calendar/dist/tg-booking-calendar.min.js"></script>
 ```
-Or, Use unpkg:
+
+Or Use unpkg:
 ```bash
-<script src="https://unpkg.com/tg-booking-calendar"></script>
+<script src="https://unpkg.com/tg-booking-calendar/dist/tg-booking-calendar.min.js"></script>
 ```
+
 ## Basic HTML Example:
 Include the following HTML structure in your page to create the calendar UI.
 ```bash
@@ -58,10 +60,10 @@ Include the following HTML structure in your page to create the calendar UI.
 At the bottom of your HTML file, before the closing </body> tag, initialize the calendar:
 ```bash
     <!-- Include the tg-booking-calendar package from a CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/tg-booking-calendar"></script>
+    <script src="https://cdn.jsdelivr.net/npm/tg-booking-calendar/dist/tg-booking-calendar.min.js"></script>
 
     <!-- or -->
-    <script src="https://unpkg.com/tg-booking-calendar"></script>
+    <script src="https://unpkg.com/tg-booking-calendar/dist/tg-booking-calendar.min.js"></script>
 
     <script>
         // Initialize the calendar
@@ -72,12 +74,12 @@ At the bottom of your HTML file, before the closing </body> tag, initialize the 
 ## Styles:
 For npm/yarn users:
 ```bash
-    import 'tg-booking-calendar/css/style.css';
+    import 'tg-booking-calendar/dist/tg-booking-calendar.min.css';
 ```
 
 For CDN users, they should manually include the CSS file from the CDN or your own hosting:
 ```bash
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tg-booking-calendar/css/style.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tg-booking-calendar/dist/tg-booking-calendar.min.css">
 ```
 
 You can customize the following styles to change the appearance of the calendar:
@@ -100,3 +102,35 @@ You can customize the following styles to change the appearance of the calendar:
 
 ## License
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
