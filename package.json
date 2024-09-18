@@ -5,7 +5,7 @@
   "main": "index.js",
   "files": [
     "index.js",
-    "css/style.css"
+    "src/Style/index.css"
   ],
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,35 +13,24 @@
   "author": "MD IMRUL KAYES <emimrulkayes@gmail.com> (https://github.com/emimrulkayes)",
   "license": "ISC",
   "keywords": [
-    "gantt",
-    "schedule",
-    "scheduler",
     "booking",
     "calendar",
-    "timeline",
-    "booking calendar",
-    "calendar booking",
-    "javascript",
-    "npm package",
     "tg calendar",
     "tg booking calendar",
     "date picker",
-    "booking system",
-    "reservation calendar",
     "reservation",
     "hotel booking",
     "JavaScript calendar",
-    "booking widget",
     "booking tool",
-    "booking management",
-    "date selection",
     "time management",
-    "online calendar",
-    "frontend calendar",
-    "scheduling"
+    "online calendar"
   ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/emimrulkayes/tg-booking-calendar.git"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/emimrulkayes/tg-booking-calendar/issues"
+  },
+  "homepage": "https://github.com/emimrulkayes/tg-booking-calendar#readme"
 }
