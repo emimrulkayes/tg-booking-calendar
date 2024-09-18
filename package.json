@@ -1,6 +1,6 @@
 {
   "name": "tg-booking-calendar",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "The booking calendar is a versatile and user-friendly JavaScript library designed to simplify the process of creating and managing booking systems in web applications.",
   "main": "index.js",
   "files": [
