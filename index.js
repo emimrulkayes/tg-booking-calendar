@@ -1,5 +1,5 @@
 // Import the CSS file.
-import './dist/src/Style/index.css';
+import './src/Styles/index.css';
 
 class TgCalendar {
   constructor() {
