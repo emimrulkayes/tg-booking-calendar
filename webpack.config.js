@@ -1,5 +1,6 @@
 const path = require('path');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
+const MiniCssExtractPlugin = require('mini-css-extract-plugin'); // Add plugin to extract CSS
 
 module.exports = {
   entry: './src/index.js',
@@ -8,21 +9,26 @@ module.exports = {
     path: path.resolve(__dirname, 'dist'),
     library: 'TgCalendar', // Expose the library globally
     libraryTarget: 'umd',
-    globalObject: 'this'
+    globalObject: 'this',
   },
   mode: 'production',
   module: {
     rules: [
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+        use: [MiniCssExtractPlugin.loader, 'css-loader'], // Extract CSS into separate file
       },
     ],
   },
+  plugins: [
+    new MiniCssExtractPlugin({
+      filename: 'tg-booking-calendar.min.css', // Output CSS file
+    }),
+  ],
   optimization: {
     minimize: true,
     minimizer: [
-      new CssMinimizerPlugin(),
+      new CssMinimizerPlugin(), // Minimize CSS
     ],
   },
 };

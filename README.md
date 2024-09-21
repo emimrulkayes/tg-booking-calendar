@@ -16,7 +16,7 @@ yarn add tg-booking-calendar
 You can use either CommonJS or ES modules to import and use the calendar.
 
 CommonJS (Node.js):
-```bash
+```javascript
 const TgCalendar = require('tg-booking-calendar');
 
 // Initialize the calendar
@@ -24,7 +24,7 @@ const calendar = new TgCalendar();
 ```
 
 ES Modules (ESM):
-```bash
+```javascript
 import TgCalendar from 'tg-booking-calendar';
 
 // Initialize the calendar
@@ -35,18 +35,18 @@ const calendar = new TgCalendar();
 For legacy environments or when you want to use the package via a CDN, you can load `tg-booking-calendar` UMD bundle from npm-based CDN such as jsDelivr and unpkg:
 
 Use jsDelivr:
-```bash
+```html
   <script src="https://cdn.jsdelivr.net/npm/tg-booking-calendar/dist/tg-booking-calendar.min.js"></script>
 ```
 
 Or Use unpkg:
-```bash
+```html
 <script src="https://unpkg.com/tg-booking-calendar/dist/tg-booking-calendar.min.js"></script>
 ```
 
 ## Basic HTML Example:
 Include the following HTML structure in your page to create the calendar UI.
-```bash
+```html
     <div class="tg-calendar-container">
         <div class="controls">
             <button class="prev">Previous</button>
@@ -57,33 +57,28 @@ Include the following HTML structure in your page to create the calendar UI.
     </div>
 ```
 
-At the bottom of your HTML file, before the closing </body> tag, initialize the calendar:
-```bash
+At the bottom of your HTML file, before the closing `</body>` tag, initialize the calendar:
+```html
     <!-- Include the tg-booking-calendar package from a CDN -->
     <script src="https://cdn.jsdelivr.net/npm/tg-booking-calendar/dist/tg-booking-calendar.min.js"></script>
 
     <!-- or -->
     <script src="https://unpkg.com/tg-booking-calendar/dist/tg-booking-calendar.min.js"></script>
-
-    <script>
-        // Initialize the calendar
-        const calendar = new TgCalendar();
-    </script>
 ```
 
 ## Styles:
 For npm/yarn users:
-```bash
+```js
     import 'tg-booking-calendar/dist/tg-booking-calendar.min.css';
 ```
 
 For CDN users, they should manually include the CSS file from the CDN or your own hosting:
-```bash
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tg-booking-calendar/dist/tg-booking-calendar.min.css">
+```html
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tg-booking-calendar/dist/tg-booking-calendar.min.css">
 ```
 
 You can customize the following styles to change the appearance of the calendar:
-```bash
+```css
     .calendar-day {
         padding: 10px;
         text-align: center;
@@ -102,35 +97,3 @@ You can customize the following styles to change the appearance of the calendar:
 
 ## License
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
