@@ -1,14 +1,28 @@
 // Import the CSS file.
-import './styles/index.css';
+import "./styles/index.css";
 
 class TgCalendar {
   constructor() {
     if (typeof document === "undefined") {
-      throw new Error("TgCalendar is intended for use in a browser environment.");
+      throw new Error(
+        "TgCalendar is intended for use in a browser environment."
+      );
     }
+
+    // Initialize the calendar
     this.monthNames = [
-      "January", "February", "March", "April", "May", "June",
-      "July", "August", "September", "October", "November", "December"
+      "January",
+      "February",
+      "March",
+      "April",
+      "May",
+      "June",
+      "July",
+      "August",
+      "September",
+      "October",
+      "November",
+      "December",
     ];
     this.dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
     this.today = new Date();
@@ -19,34 +33,27 @@ class TgCalendar {
     this.displayedYear = this.currentYear;
     this.selectedDay = null;
 
-    this.initCalendar();
-  }
-
-  initCalendar() {
+    this.container = document.querySelector(".tg-calendar-container");
+    this.controls = document.querySelector(".controls");
     this.calendarGrid = document.querySelector(".calendar-grid");
     this.monthTitle = document.querySelector(".month-title");
     this.prevBtn = document.querySelector(".prev");
     this.nextBtn = document.querySelector(".next");
+    this.initCalendar();
+  }
 
-    if (!this.calendarGrid || !this.monthTitle || !this.prevBtn || !this.nextBtn) {
-      throw new Error("Required DOM elements are missing.");
-    }
-
+  initCalendar() {
     this.prevBtn.addEventListener("click", () => this.prevMonth());
     this.nextBtn.addEventListener("click", () => this.nextMonth());
-
     this.updateCalendar(this.displayedMonth, this.displayedYear);
   }
 
   updateCalendar(month, year) {
-    // Clear the calendar grid before updating it
     this.calendarGrid.innerHTML = "";
-    
-    // Update the month title
     this.monthTitle.textContent = `${this.monthNames[month]} ${year}`;
 
     // Render day names (Sun, Mon, Tue...)
-    this.dayNames.forEach(day => {
+    this.dayNames.forEach((day) => {
       const dayNameCell = document.createElement("div");
       dayNameCell.classList.add("day-name");
       dayNameCell.textContent = day;
@@ -71,7 +78,11 @@ class TgCalendar {
       dayCell.textContent = i;
 
       // Highlight the current day
-      if (i === this.currentDay && month === this.currentMonth && year === this.currentYear) {
+      if (
+        i === this.currentDay &&
+        month === this.currentMonth &&
+        year === this.currentYear
+      ) {
         dayCell.classList.add("current-day");
       }
 
@@ -111,13 +122,11 @@ class TgCalendar {
   }
 }
 
-// Hybrid approach to support both Node (npm) and browser environments
-if (typeof module !== "undefined" && module.exports) {
-  // Node/CommonJS environment (npm package)
-  module.exports = TgCalendar;
-} else {
-  // Browser environment (auto-instantiation)
+if (typeof document !== "undefined") {
+
   document.addEventListener("DOMContentLoaded", () => {
     const calendar = new TgCalendar();
   });
 }
+
+export default TgCalendar;
