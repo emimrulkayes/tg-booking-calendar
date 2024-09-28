@@ -16,6 +16,7 @@ yarn add tg-booking-calendar
 
 ES Modules (ESM):
 ```javascript
+import React, { useEffect } from 'react';
 import TgCalendar from 'tg-booking-calendar';
 
 // Initialize the calendar
