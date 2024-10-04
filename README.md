@@ -76,5 +76,23 @@ You can customize the following styles to change the appearance of the calendar:
 }
 ```
 
-## License
+## Contributions:
+
+Contributions, issues, and feature requests are what make the open-source community such an amazing place to learn, inspire, and create. Any contributions you make are greatly appreciated.
+
+- Fork the Project
+- Create your Feature Branch
+- Commit your Changes
+- Push to the Branch
+- Open a Pull Request
+
+Feel free to check the [issues page](https://github.com/emimrulkayes/tg-booking-calendar/issues) for any existing issues or to create a new one.
+
+- Contributions, issues and features requests are welcome!
+- Submit PRs to help solve issues or add features
+- Find and report issues
+- Star the project
+
+## License:
+
 [![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)
